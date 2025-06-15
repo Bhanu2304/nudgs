@@ -1,0 +1,173 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #F3EFE3;
+}
+.header {
+    padding: 10px 20px;
+    background-color: #000;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+}
+#user_icon{
+    width: 30px;height: 30px;background: white;margin: 7px;border-radius: 50%;
+}
+#user_icon:hover .user_icon_menu {
+    display: block !important;
+}
+.logout{
+    cursor: pointer;
+}
+.user_icon_menu div{
+    padding: 5px 10px;
+    cursor: pointer;
+    background: #fff;
+    transition: background 0.3s;
+}
+.user_icon_menu div:hover{
+    background: #F3EFE3;
+}
+
+.logo {
+    font-size: 28px;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.logo span.outline {
+    font-weight: normal;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    margin-left: 4px;
+    font-size: 18px;
+    vertical-align: super;
+}
+
+.login-box {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 340px;
+    text-align: center;
+}
+
+.login-box h2 {
+    margin-bottom: 20px;
+    color: #1d1d1f;
+}
+
+input[type="email"], input[type="password"], .user_name {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button[type="submit"], .actions button {
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(to right, #2ed478, #5f34f5);
+    border: none;
+    border-radius: 30px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    opacity: 0.95;
+}
+
+.forgot {
+    margin-top: 10px;
+    font-size: 0.9em;
+}
+
+.divider {
+    margin: 20px 0;
+    color: #ccc;
+    font-size: 0.85em;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.actions button {
+    background: #f9f3d4;
+    border: 1px solid #eee;
+    color: #333;
+}
+.product_tour,.request_demo_btn{
+    background: none rgb(255, 246, 207); font-family: VisbyCF-Regular; font-size: 14px; color: rgb(199, 199, 199); text-align: center; line-height: 1.5; border-style: solid; border-width: 2px; border-color: rgb(199, 199, 199); border-radius: 20px; padding: 0px 5px; opacity: 1; transition: background 1000ms; cursor: pointer; align-self: center; min-width: 128px; max-width: 128px; order: 1; min-height: 35px; max-height: 35px; width: 128px; flex-grow: 1; height: 35px; margin: 0px;
+}
+.product_tour:hover,.request_demo_btn:hover{
+    background: #fff;
+    color: rgb(0, 0, 0);
+    opacity: 1;
+}
+.user_icon_menu{
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw; height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #FFD800;
+    padding: 30px;
+    border-radius: 16px;
+    width: 450px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.modal-content h4 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: white;
+    text-align:center;
+}
+
+.modal-content label {
+    display: block;
+    font-weight: 500;
+    color: #333;
+}
+
+.modal-content input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+    margin-top: 10px;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
